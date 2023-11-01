@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stdlib::Core::StringView</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+</head>
+<body>
+    <sidenav>
+        <h1>
+            stdlib::Core 
+        </h1>
+        <hr />
+        <a href="/stdlib/Core.html">< Go Back</a><a href="/stdlib/Core/StringView/-constructor.html">constructor</a><a href="/stdlib/Core/StringView/size.html">size</a><a href="/stdlib/Core/StringView/bytes.html">bytes</a><a href="/stdlib/Core/StringView/-operator ==.html">operator ==</a><a href="/stdlib/Core/StringView/-operator !=.html">operator !=</a><a href="/stdlib/Core/StringView/-operator +.html">operator +</a><a href="/stdlib/Core/StringView/to_string.html">to_string</a><a href="/stdlib/Core/StringView/-operator [].html">operator []</a><a href="/stdlib/Core/StringView/from.html">from</a><a href="/stdlib/Core/StringView/from.html">from</a><a href="/stdlib/Core/StringView/from.html">from</a><a href="/stdlib/Core/StringView/concat.html">concat</a><a href="/stdlib/Core/StringView/-constructor.html">constructor</a>
+    </sidenav>
+    <main>
+        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/Core.html">Core</a>::<a style="color:#78d3fc;" href="/stdlib/Core/StringView.html">StringView</a>;</h1><hr/><div><pre><code class="language-snowball">public class StringView<Char = u8>
+    implements ToString { 
+private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>StringView</quote></h1><p><br/>A class representing a view of a string of characters.</p><p><br/> The `StringView` class offers a versatile interface for working with strings of characters.<br/> It supports a wide range of string manipulation operations, including concatenation, substring<br/> extraction, length calculation, and comparison. This class is designed to be efficient and memory-safe,<br/> automatically handling memory allocation and deallocation required for string operations.<br/> The `StringView` class is an ideal choice for working with strings without the need for full string<br/> ownership or memory management. It provides efficient access and manipulation of string data.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the size of the string view.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func bytes() StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns a pointer to the buffer containing the string view.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator ==(
+    other: Self
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator !=(
+    other: Self
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator +(
+    other: Self
+) Self { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Converts the string view to a string representation.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator [](
+    index: i32
+) Char { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static operator func constructor() void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from(
+    buffer: Self
+) StringView<Char> { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Constructs a string view from another string view.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from<T>(
+    buffer: T
+) StringView<Char> { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Constructs a string view from an object that implements the `ToString` interface.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from(
+    buffer: *const u8,
+    size: i32
+) StringView<Char> { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Constructs a string view from a buffer and its size.</p><hr/><h1 style="color:#78d3fc;">Private Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">private static func concat(
+    str1: StringType,
+    str2: StringType,
+    len1: i32,
+    len2: i32
+) StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates two string views.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">private static operator func constructor(
+    buffer: StringType,
+    length: i32
+) void { ... }</code></pre></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

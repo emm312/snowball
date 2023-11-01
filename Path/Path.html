@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stdlib::Path::Path</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+</head>
+<body>
+    <sidenav>
+        <h1>
+            stdlib::Path 
+        </h1>
+        <hr />
+        <a href="/stdlib/Path.html">< Go Back</a><a href="/stdlib/Path/Path/-constructor.html">constructor</a><a href="/stdlib/Path/Path/to_string.html">to_string</a><a href="/stdlib/Path/Path/to_cstr.html">to_cstr</a><a href="/stdlib/Path/Path/join.html">join</a><a href="/stdlib/Path/Path/join.html">join</a><a href="/stdlib/Path/Path/-operator ==.html">operator ==</a><a href="/stdlib/Path/Path/-operator !=.html">operator !=</a><a href="/stdlib/Path/Path/-operator <.html">operator <</a><a href="/stdlib/Path/Path/-operator >.html">operator ></a><a href="/stdlib/Path/Path/-operator <=.html">operator <=</a><a href="/stdlib/Path/Path/-operator >=.html">operator >=</a><a href="/stdlib/Path/Path/-operator / .html">operator / </a><a href="/stdlib/Path/Path/-operator / .html">operator / </a><a href="/stdlib/Path/Path/-operator +.html">operator +</a><a href="/stdlib/Path/Path/-operator +.html">operator +</a><a href="/stdlib/Path/Path/to_string.html">to_string</a>
+    </sidenav>
+    <main>
+        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/Path.html">Path</a>::<a style="color:#78d3fc;" href="/stdlib/Path/Path.html">Path</a>;</h1><hr/><div><pre><code class="language-snowball">private class Path<>
+    implements ToString { 
+private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><p><br/> A path to a file or directory.<br/> <br/> This is a wrapper around a string that provides some useful<br/> operations for manipulating paths.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_cstr() CString { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+    other: String
+) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+    other: Path
+) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator ==(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator !=(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator <(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator >(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator <=(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator >=(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator / (
+    other: Path
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator / (
+    other: String
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator +(
+    other: Path
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator +(
+    other: String
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static operator func constructor(
+    path: String
+) void { ... }</code></pre></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

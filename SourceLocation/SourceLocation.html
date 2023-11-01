@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stdlib::SourceLocation::SourceLocation</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+</head>
+<body>
+    <sidenav>
+        <h1>
+            stdlib::SourceLocation 
+        </h1>
+        <hr />
+        <a href="/stdlib/SourceLocation.html">< Go Back</a><a href="/stdlib/SourceLocation/SourceLocation/current.html">current</a><a href="/stdlib/SourceLocation/SourceLocation/file.html">file</a><a href="/stdlib/SourceLocation/SourceLocation/line.html">line</a><a href="/stdlib/SourceLocation/SourceLocation/column.html">column</a><a href="/stdlib/SourceLocation/SourceLocation/function.html">function</a><a href="/stdlib/SourceLocation/SourceLocation/-constructor.html">constructor</a>
+    </sidenav>
+    <main>
+        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/SourceLocation.html">SourceLocation</a>::<a style="color:#78d3fc;" href="/stdlib/SourceLocation/SourceLocation.html">SourceLocation</a>;</h1><hr/><div><pre><code class="language-snowball">public class SourceLocation<> { 
+private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>SourceLocation</quote></h1><p><br/>A class to represent a location in a source file.</p><p><br/> This class is used to represent a location in a source file. It is<br/> used as an utility class to pass around source locations.<br/> <br/> func foo(x: SourceLocation = SourceLocation::current()) {<br/>   // ...<br/> }<br/> foo(); // Passes the current source location. from the call site.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func file() String { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func line() i32 { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func column() i32 { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func function() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func current(
+    file: String,
+    line: i32,
+    column: i32,
+    function: String
+) SourceLocation { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Construct a new SourceLocation object from the current location.</p><hr/><h1 style="color:#78d3fc;">Private Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">private static operator func constructor(
+    file: String,
+    line: i32,
+    column: i32,
+    function: String
+) void { ... }</code></pre></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

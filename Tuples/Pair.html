@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stdlib::Tuples::Pair</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+</head>
+<body>
+    <sidenav>
+        <h1>
+            stdlib::Tuples 
+        </h1>
+        <hr />
+        <a href="/stdlib/Tuples.html">< Go Back</a><a href="/stdlib/Tuples/Pair/-constructor.html">constructor</a>
+    </sidenav>
+    <main>
+        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/Tuples.html">Tuples</a>::<a style="color:#78d3fc;" href="/stdlib/Tuples/Pair.html">Pair</a>;</h1><hr/><div><pre><code class="language-snowball">public class Pair<T, U> { 
+public:
+    // @brief The first element of the pair. 
+    // 
+    // 
+    let first: T;
+
+    // @brief The second element of the pair.
+    // 
+    // 
+    let second: U;
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>Pair</quote></h1><p><br/>A templated class that represents a simple container for holding a pair of values.</p><p><br/> <br/> <br/> The `Pair` class is a simple container that holds two values, which can be of different types.<br/> It is commonly used to associate two values together as a single entity.<br/> <br/> <br/> Users can directly access and modify the elements without restrictions.<br/> <br/> Example usage:<br/>   let x = new Pair&lt;int, int&gt;{1, 2};<br/>   let y = x.first + x.second;<br/> <br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static operator func constructor(
+    first: T,
+    second: U
+) void { ... }</code></pre></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

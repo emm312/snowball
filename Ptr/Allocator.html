@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stdlib::Ptr::Allocator</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+</head>
+<body>
+    <sidenav>
+        <h1>
+            stdlib::Ptr 
+        </h1>
+        <hr />
+        <a href="/stdlib/Ptr.html">< Go Back</a><a href="/stdlib/Ptr/Allocator/-constructor.html">constructor</a><a href="/stdlib/Ptr/Allocator/alloc.html">alloc</a><a href="/stdlib/Ptr/Allocator/alloc_zeroed.html">alloc_zeroed</a><a href="/stdlib/Ptr/Allocator/realloc.html">realloc</a><a href="/stdlib/Ptr/Allocator/free.html">free</a>
+    </sidenav>
+    <main>
+        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/Ptr.html">Ptr</a>::<a style="color:#78d3fc;" href="/stdlib/Ptr/Allocator.html">Allocator</a>;</h1><hr/><div><pre><code class="language-snowball">public class Allocator<T> { 
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>Allocator</quote></h1><p><br/>An utility class to allocate memory blocks for a given type.</p><p><br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static operator func constructor() void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func alloc(
+    size: i32
+) NonNull<T> { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func alloc_zeroed(
+    size: i32
+) NonNull<T> { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func realloc(
+    ptr: NonNull<T>,
+    size: i32
+) NonNull<T> { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func free(
+    ptr: NonNull<T>
+) void { ... }</code></pre></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
