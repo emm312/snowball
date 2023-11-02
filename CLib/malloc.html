@@ -10,6 +10,7 @@
 
     <!-- and it's easy to individually load additional languages -->
     <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+    <base href="/snowball/">
 </head>
 <body>
     <sidenav>
@@ -17,10 +18,10 @@
             stdlib::CLib 
         </h1>
         <hr />
-        <a href="/stdlib/CLib.html">< Go Back</a>
+        <a href="stdlib/CLib.html">< Go Back</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/CLib.html">CLib</a>::<a style="color:#78d3fc;" href="/stdlib/CLib/malloc.html">malloc</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func malloc(
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/CLib.html">CLib</a>::<a style="color:#78d3fc;" href="stdlib/CLib/malloc.html">malloc</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func malloc(
     $extern-arg-0: c_int
 ) c_obj { ... }</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>malloc</quote></h1><p><br/>Allocates size bytes of uninitialized storage.</p><p><br/>  any object type with fundamental alignment.<br/>  For example, a null pointer may be returned. Alternatively, a non-null<br/>  pointer may be returned; but such a pointer should not be dereferenced,<br/>  and should be passed to free to avoid memory leaks.<br/>  locations visible through its argument, and not any static storage.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Parameters</h1><br/><h1>size(c_int)</h1><p>- number of bytes to allocate</p><hr/><h1 style="color:#78d3fc;">@note</h1><p>(2) malloc is thread-safe: it behaves as though only accessing the memory</p><hr/><h1 style="color:#78d3fc;">@return</h1><p>c_obj - a pointer that is suitably aligned for</p><br/><br/></div>
     </main>

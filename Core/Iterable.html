@@ -10,6 +10,7 @@
 
     <!-- and it's easy to individually load additional languages -->
     <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+    <base href="/snowball/">
 </head>
 <body>
     <sidenav>
@@ -17,10 +18,10 @@
             stdlib::Core 
         </h1>
         <hr />
-        <a href="/stdlib/Core.html">< Go Back</a><a href="/stdlib/Core/Iterable/next.html">next</a><a href="/stdlib/Core/Iterable/reset.html">reset</a>
+        <a href="stdlib/Core.html">< Go Back</a><a href="stdlib/Core/Iterable/next.html">next</a><a href="stdlib/Core/Iterable/reset.html">reset</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/Core.html">Core</a>::<a style="color:#78d3fc;" href="/stdlib/Core/Iterable.html">Iterable</a>;</h1><hr/><div><pre><code class="language-snowball">public interface Iterable<IterType> { 
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Core.html">Core</a>::<a style="color:#78d3fc;" href="stdlib/Core/Iterable.html">Iterable</a>;</h1><hr/><div><pre><code class="language-snowball">public interface Iterable<IterType> { 
 private:
     // ... private fields
 };</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>Iterable</quote></h1><p><br/>An interface representing an iterable.</p><p><br/> The `Iterable` interface defines a contract for objects that can be iterated over. It provides<br/> various operations and functionalities for working with iterables, allowing you to access<br/> elements, iterate through collections, and reset the iteration state if needed.<br/> This interface is designed to be implemented by classes that represent iterable data structures.<br/> Implementing classes should provide the `next` method to advance the iterator and the `reset` method<br/> to reset the iteration to the beginning if necessary.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public virtual func next() Iter<IterType> { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Advances the iterator to the next element.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func reset() void { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Resets the iterator to the beginning of the iterable.</p></div>

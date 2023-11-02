@@ -10,6 +10,7 @@
 
     <!-- and it's easy to individually load additional languages -->
     <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+    <base href="/snowball/">
 </head>
 <body>
     <sidenav>
@@ -17,10 +18,10 @@
             stdlib::CLib 
         </h1>
         <hr />
-        <a href="/stdlib/CLib.html">< Go Back</a>
+        <a href="stdlib/CLib.html">< Go Back</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="/stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="/stdlib/CLib.html">CLib</a>::<a style="color:#78d3fc;" href="/stdlib/CLib/puts.html">puts</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func puts(
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/CLib.html">CLib</a>::<a style="color:#78d3fc;" href="stdlib/CLib/puts.html">puts</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func puts(
     $extern-arg-0: *const c_char
 ) c_int { ... }</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>puts</quote></h1><p><br/>Writes every character from the null-terminated string str and one additional newline</p><p><br/>  written, some return the number of characters written (or INT_MAX if the string was longer than that),<br/>  some simply return a non-negative constant.<br/>  redirected to a file.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Parameters</h1><br/><h1>str(String)</h1><p>This is the string to be written.</p><hr/><h1 style="color:#78d3fc;">@func</h1><p>fputc.</p><hr/><h1 style="color:#78d3fc;">@note</h1><p>(3) A typical cause of failure for puts is running out of space on the file system, when stdout is</p><hr/><h1 style="color:#78d3fc;">@return</h1><p>(c_int) If successful, non-negative value is returned. On error, the function returns EOF.</p><br/><br/></div>
     </main>
