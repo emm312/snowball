@@ -21,24 +21,24 @@
         <a href="stdlib/Internal/Preload.html">< Go Back</a><a href="stdlib/Internal/Preload/$mut-pointer/-operator +.html">operator +</a><a href="stdlib/Internal/Preload/$mut-pointer/as_ref.html">as_ref</a><a href="stdlib/Internal/Preload/$mut-pointer/-operator =.html">operator =</a><a href="stdlib/Internal/Preload/$mut-pointer/is_null.html">is_null</a><a href="stdlib/Internal/Preload/$mut-pointer/unchecked_get.html">unchecked_get</a><a href="stdlib/Internal/Preload/$mut-pointer/-operator [].html">operator []</a><a href="stdlib/Internal/Preload/$mut-pointer/-operator !.html">operator !</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Internal.html">Internal</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload.html">Preload</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload/$mut-pointer.html">$mut-pointer</a>;</h1><hr/><div><pre><code class="language-snowball">private class $mut-pointer<T> { 
-};</code></pre></div><br><div class="doc"><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe operator func operator +(
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Internal.html">Internal</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload.html">Preload</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload/$mut-pointer.html">$mut-pointer</a>;</h1><hr/><div><pre><code class="language-snowball">private class $mut-pointer&lt;T&gt; { 
+};</code></pre></div><br><div class="doc"><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe operator func  +(
     self: *const T,
     other: i64
-) *mut T { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe func as_ref(
+) *mut T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe func as_ref(
     self: *const T
-) &T { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func operator =(
+) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func  =(
     self: *const T,
     other: *const T
-) *mut T { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func is_null(
+) *mut T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func is_null(
     self: *mut T
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func unchecked_get(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func unchecked_get(
     self: *mut T,
     index: i32
-) &T { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator [](
+) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  [](
     self: *mut T,
     index: i64
-) T { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator !(
+) T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  !(
     self: *mut T
 ) bool { ... }</code></pre></div>
     </main>

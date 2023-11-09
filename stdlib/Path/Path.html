@@ -21,35 +21,35 @@
         <a href="stdlib/Path.html">< Go Back</a><a href="stdlib/Path/Path/-constructor.html">constructor</a><a href="stdlib/Path/Path/to_string.html">to_string</a><a href="stdlib/Path/Path/to_cstr.html">to_cstr</a><a href="stdlib/Path/Path/join.html">join</a><a href="stdlib/Path/Path/join.html">join</a><a href="stdlib/Path/Path/-operator ==.html">operator ==</a><a href="stdlib/Path/Path/-operator !=.html">operator !=</a><a href="stdlib/Path/Path/-operator <.html">operator <</a><a href="stdlib/Path/Path/-operator >.html">operator ></a><a href="stdlib/Path/Path/-operator <=.html">operator <=</a><a href="stdlib/Path/Path/-operator >=.html">operator >=</a><a href="stdlib/Path/Path/-operator / .html">operator / </a><a href="stdlib/Path/Path/-operator / .html">operator / </a><a href="stdlib/Path/Path/-operator +.html">operator +</a><a href="stdlib/Path/Path/-operator +.html">operator +</a><a href="stdlib/Path/Path/to_string.html">to_string</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Path.html">Path</a>::<a style="color:#78d3fc;" href="stdlib/Path/Path.html">Path</a>;</h1><hr/><div><pre><code class="language-snowball">private class Path<>
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Path.html">Path</a>::<a style="color:#78d3fc;" href="stdlib/Path/Path.html">Path</a>;</h1><hr/><div><pre><code class="language-snowball">private class Path&lt;&gt;
     implements ToString { 
 private:
     // ... private fields
-};</code></pre></div><br><div class="doc"><p><br/> A path to a file or directory.<br/> <br/> This is a wrapper around a string that provides some useful<br/> operations for manipulating paths.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_cstr() CString { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+};</code></pre></div><br><div class="doc"><p><br/> A path to a file or directory.<br/> <br/> This is a wrapper around a string that provides some useful<br/> operations for manipulating paths.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_cstr() CString { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
     other: String
-) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
     other: Path
-) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator ==(
+) Path { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Join two paths together.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  ==(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator !=(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  !=(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator <(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  <(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator >(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  >(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator <=(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  <=(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator >=(
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  >=(
     other: Path
-) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator / (
+) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  / (
     other: Path
-) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator / (
+) Path { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  / (
     other: String
-) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator +(
+) Path { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  +(
     other: Path
-) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func operator +(
+) Path { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  +(
     other: String
-) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+) Path { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
     path: String
 ) void { ... }</code></pre></div>
     </main>
