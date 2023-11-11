@@ -21,10 +21,10 @@
         <a href="stdlib/SourceLocation.html">< Go Back</a><a href="stdlib/SourceLocation/SourceLocation/current.html">current</a><a href="stdlib/SourceLocation/SourceLocation/file.html">file</a><a href="stdlib/SourceLocation/SourceLocation/line.html">line</a><a href="stdlib/SourceLocation/SourceLocation/column.html">column</a><a href="stdlib/SourceLocation/SourceLocation/function.html">function</a><a href="stdlib/SourceLocation/SourceLocation/-constructor.html">constructor</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/SourceLocation.html">SourceLocation</a>::<a style="color:#78d3fc;" href="stdlib/SourceLocation/SourceLocation.html">SourceLocation</a>;</h1><hr/><div><pre><code class="language-snowball">public class SourceLocation&lt;&gt; { 
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/SourceLocation.html">SourceLocation</a>::<a style="color:#78d3fc;" href="stdlib/SourceLocation/SourceLocation.html">SourceLocation</a>;</h1><hr/><div><pre><code class="language-snowball">public class SourceLocation {
 private:
     // ... private fields
-};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>SourceLocation</quote></h1><p><br/>A class to represent a location in a source file.</p><p><br/> This class is used to represent a location in a source file. It is<br/> used as an utility class to pass around source locations.<br/> <br/> func foo(x: SourceLocation = SourceLocation::current()) {<br/>   // ...<br/> }<br/> foo(); // Passes the current source location. from the call site.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func file() String { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func line() i32 { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func column() i32 { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func function() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func current(
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>SourceLocation</quote></h1><p><br/>A class to represent a location in a source file.</p><p><br/> This class is used to represent a location in a source file. It is<br/> used as an utility class to pass around source locations.<br/> <br/> func foo(x: SourceLocation = SourceLocation::current()) {<br/>   // ...<br/> }<br/> foo(); // Passes the current source location. from the call site.<br/> </p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func file() String { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func line() i32 { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func column() i32 { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func function() String { ... }</code></pre><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func current(
     file: String,
     line: i32,
     column: i32,
@@ -34,7 +34,7 @@ private:
     line: i32,
     column: i32,
     function: String
-) void { ... }</code></pre></div>
+) void { ... }</code></pre><br/><br/><br/></div>
     </main>
 
     <script>hljs.highlightAll();</script>

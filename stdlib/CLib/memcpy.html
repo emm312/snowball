@@ -25,7 +25,7 @@
     $extern-arg-0: c_obj,
     $extern-arg-1: c_obj,
     $extern-arg-2: c_int
-) void { ... }</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>memcpy</quote></h1><p><br/>(memcpy) Copies count bytes from the object pointed to by src to the object pointed to by dest.</p><p><br/> <br/></p><hr/><h1 style="color:#78d3fc;">Parameters</h1><br/><h1>count(c_int)</h1><p>- number of bytes to copy</p><hr/><h1 style="color:#78d3fc;">@note</h1><p>(4) If the objects are potentially-overlapping or not TriviallyCopyable, use memmove or memcpy_s instead.</p><hr/><h1 style="color:#78d3fc;">@return</h1><p>c_obj - dest</p><br/><br/></div>
+) void { ... }</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>memcpy</quote></h1><p><br/>(memcpy) Copies count bytes from the object pointed to by src to the object pointed to by dest.</p><p><br/> </p><hr/><h1 style="color:#78d3fc;">Parameters</h1><br/><h1>dest(c_obj)</h1><p>- pointer to the object to copy to</p><br/><h1>src(c_obj)</h1><p>- pointer to the object to copy from</p><br/><h1>count(c_int)</h1><p>- number of bytes to copy</p><hr/><h1 style="color:#78d3fc;">@note</h1><p>(4) If the objects are potentially-overlapping or not TriviallyCopyable, use memmove or memcpy_s instead.</p><hr/><h1 style="color:#78d3fc;">@return</h1><p>c_obj - dest</p><br/><br/></div>
     </main>
 
     <script>hljs.highlightAll();</script>

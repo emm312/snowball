@@ -21,13 +21,12 @@
         <a href="stdlib/Internal/Preload.html">< Go Back</a><a href="stdlib/Internal/Preload/$const-pointer/-operator +.html">operator +</a><a href="stdlib/Internal/Preload/$const-pointer/as_ref.html">as_ref</a><a href="stdlib/Internal/Preload/$const-pointer/-operator =.html">operator =</a><a href="stdlib/Internal/Preload/$const-pointer/is_null.html">is_null</a><a href="stdlib/Internal/Preload/$const-pointer/unchecked_get.html">unchecked_get</a><a href="stdlib/Internal/Preload/$const-pointer/-operator [].html">operator []</a><a href="stdlib/Internal/Preload/$const-pointer/-operator !.html">operator !</a>
     </sidenav>
     <main>
-        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Internal.html">Internal</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload.html">Preload</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload/$const-pointer.html">$const-pointer</a>;</h1><hr/><div><pre><code class="language-snowball">private class $const-pointer&lt;T&gt; { 
-};</code></pre></div><br><div class="doc"><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe operator func  +(
+        <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Internal.html">Internal</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload.html">Preload</a>::<a style="color:#78d3fc;" href="stdlib/Internal/Preload/$const-pointer.html">$const-pointer</a>;</h1><hr/><div><pre><code class="language-snowball">private class $const-pointer&lt;T&gt; {};</code></pre></div><br><div class="doc"><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe operator func +(
     self: *const T,
     other: i64
 ) *const T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public unsafe func as_ref(
     self: *const T
-) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  =(
+) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func =(
     self: *const T,
     other: *const T
 ) *const T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func is_null(
@@ -35,12 +34,12 @@
 ) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func unchecked_get(
     self: *const T,
     index: i32
-) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  [](
+) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func [](
     self: *const T,
     index: i64
-) T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  !(
+) T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func !(
     self: *const T
-) bool { ... }</code></pre></div>
+) bool { ... }</code></pre><br/><br/><br/></div>
     </main>
 
     <script>hljs.highlightAll();</script>

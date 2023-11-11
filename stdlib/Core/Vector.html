@@ -22,23 +22,23 @@
     </sidenav>
     <main>
         <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Core.html">Core</a>::<a style="color:#78d3fc;" href="stdlib/Core/Vector.html">Vector</a>;</h1><hr/><div><pre><code class="language-snowball">public class Vector&lt;T, Allocator = Ptr::Allocator&lt;T&gt;&gt;
-    implements Iterable&lt;T&gt;, ToString { 
+    implements Iterable&lt;T&gt;, ToString {
 private:
     // ... private fields
-};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>Vector</quote></h1><p><br/>A class representing a vector of elements.</p><p><br/> The `Vector` class serves as a versatile container for managing vectors of elements.<br/> It offers a wide range of operations and functionalities, including element insertion,<br/> removal, and efficient element access. The class is designed for efficiency and memory<br/> safety, automatically handling memory allocation and deallocation required for storing<br/> and manipulating vectors.<br/>       interface for managing collections of elements, abstracting the complexities of memory<br/>       management.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func push(
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>Vector</quote></h1><p><br/>A class representing a vector of elements.</p><p><br/> The `Vector` class serves as a versatile container for managing vectors of elements.<br/> It offers a wide range of operations and functionalities, including element insertion,<br/> removal, and efficient element access. The class is designed for efficiency and memory<br/> safety, automatically handling memory allocation and deallocation required for storing<br/> and manipulating vectors.<br/>       interface for managing collections of elements, abstracting the complexities of memory<br/>       management.<br/> </p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func push(
     value: T
 ) void { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>It pushes an element to the back of the vector.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func resize() void { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Resizes the vector.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func reserve(
     new_capacity: i32
 ) void { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Reserves a capacity for the vector.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func at(
     index: i32
-) &T { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the element at the specified index.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  [](
+) &T { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the element at the specified index.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func [](
     index: i32
-) &T { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func insert(
+) &T { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>A wrapper over the at() method. </p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func insert(
     index: i32,
     value: T
 ) void { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>It inserts an element at the specified index.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string&lt;&gt;() String { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>It returns a string representation of the vector.</p><hr/><h1 style="color:#78d3fc;">Public Static Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor() void { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func with_capacity(
     capacity: i32
-) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>It creates a new Vector with the specified capacity.</p></div>
+) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>It creates a new Vector with the specified capacity.</p><br/><br/><br/></div>
     </main>
 
     <script>hljs.highlightAll();</script>

@@ -22,24 +22,24 @@
     </sidenav>
     <main>
         <h1><a style="color:#78d3fc;" href="stdlib.html">stdlib</a>::<a style="color:#78d3fc;" href="stdlib/Core.html">Core</a>::<a style="color:#78d3fc;" href="stdlib/Core/StringView.html">StringView</a>;</h1><hr/><div><pre><code class="language-snowball">public class StringView&lt;Char = u8&gt;
-    implements ToString, Clone&lt;Self&gt; { 
+    implements ToString, Clone&lt;Self&gt; {
 private:
     // ... private fields
-};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>StringView</quote></h1><p><br/>A class representing a view of a string of characters.</p><p><br/> The `StringView` class offers a versatile interface for working with strings of characters.<br/> It supports a wide range of string manipulation operations, including concatenation, substring<br/> extraction, length calculation, and comparison. This class is designed to be efficient and memory-safe,<br/> automatically handling memory allocation and deallocation required for string operations.<br/> The `StringView` class is an ideal choice for working with strings without the need for full string<br/> ownership or memory management. It provides efficient access and manipulation of string data.<br/> <br/></p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the size of the string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func bytes() StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns a pointer to the buffer containing the string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  ==(
+};</code></pre></div><br><div class="doc"><h1 style="color:#78d3fc;">Brief Description for <quote>StringView</quote></h1><p><br/>A class representing a view of a string of characters.</p><p><br/> The `StringView` class offers a versatile interface for working with strings of characters.<br/> It supports a wide range of string manipulation operations, including concatenation, substring<br/> extraction, length calculation, and comparison. This class is designed to be efficient and memory-safe,<br/> automatically handling memory allocation and deallocation required for string operations.<br/> The `StringView` class is an ideal choice for working with strings without the need for full string<br/> ownership or memory management. It provides efficient access and manipulation of string data.<br/> </p><hr/><h1 style="color:#78d3fc;">Public Functions</h1><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the size of the string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func bytes() StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns a pointer to the buffer containing the string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func ==(
     other: Self
-) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  !=(
+) bool { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Compares the string view with another string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func !=(
     other: Self
-) bool { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  +(
+) bool { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Checks if the string views are not equal.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
     other: Self
-) Self { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  +(
+) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates the string view with another string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
     other: Char
-) Self { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func  +=(
+) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates the string view with a character.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func +=(
     other: Self
-) Self { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func  +=(
+) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates the string view with a string.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func +=(
     other: Char
-) Self { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Converts the string view to a string representation.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func  [](
+) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates the string view with a character.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Converts the string view to a string representation.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func [](
     index: i32
-) Char { ... }</code></pre><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func substr(
+) Char { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns the character at the specified index.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func substr(
     range: Range&lt;i32&gt;
 ) Self { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Returns a substring of the string view.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func rjust(
     length: i32,
@@ -59,4 +59,12 @@ private:
     str2: StringType,
     len1: i32,
     len2: i32
-) StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates two string views.</p><br/><
+) StringType { ... }</code></pre><p style="margin-left: 15px; transform: translateY(-50%);"><br/>Concatenates two string views.</p><br/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut private static operator func constructor(
+    buffer: StringType,
+    length: i32
+) void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
