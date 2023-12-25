@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::std::StringView</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::std <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/std.html">&lt; Go Back</a> <a href="std/std/StringView/bytes.html">&gt; bytes</a> <a href="std/std/StringView/clone.html">&gt; clone</a> <a href="std/std/StringView/concat.html">&gt; concat</a> <a href="std/std/StringView/-constructor.html">&gt; constructor</a> <a href="std/std/StringView/-constructor-2.html">&gt; constructor(2)</a> <a href="std/std/StringView/debug.html">&gt; debug</a> <a href="std/std/StringView/empty.html">&gt; empty</a> <a href="std/std/StringView/from.html">&gt; from</a> <a href="std/std/StringView/from-2.html">&gt; from(2)</a> <a href="std/std/StringView/from-3.html">&gt; from(3)</a> <a href="std/std/StringView/from_cstr.html">&gt; from_cstr</a> <a href="std/std/StringView/ljust.html">&gt; ljust</a> <a href="std/std/StringView/-operator !=.html">&gt; operator !=</a> <a href="std/std/StringView/-operator +.html">&gt; operator +</a> <a href="std/std/StringView/-operator +-2.html">&gt; operator +(2)</a> <a href="std/std/StringView/-operator +=.html">&gt; operator +=</a> <a href="std/std/StringView/-operator +=-2.html">&gt; operator +=(2)</a> <a href="std/std/StringView/-operator ==.html">&gt; operator ==</a> <a href="std/std/StringView/-operator [].html">&gt; operator []</a> <a href="std/std/StringView/rjust.html">&gt; rjust</a> <a href="std/std/StringView/size.html">&gt; size</a> <a href="std/std/StringView/split.html">&gt; split</a> <a href="std/std/StringView/substr.html">&gt; substr</a> <a href="std/std/StringView/to_string.html">&gt; to_string</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std/StringView.html">StringView</a>;</h1><hr/><div><pre><code class="language-snowball">public class StringView&lt;Char = u8&gt;
+    implements ToString, Clone&lt;Self&gt; {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>StringView</quote></h1><p><br/>A class representing a view of a string of characters.</p><p><br/> The `StringView` class offers a versatile interface for working with strings of characters.<br/> It supports a wide range of string manipulation operations, including concatenation, substring<br/> extraction, length calculation, and comparison. This class is designed to be efficient and memory-safe,<br/> automatically handling memory allocation and deallocation required for string operations.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() usize { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the size of the string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func bytes() StringType { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns a pointer to the buffer containing the string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func ==(
+    other: Self
+) bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Compares the string view with another string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func !=(
+    other: Self
+) bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Checks if the string views are not equal.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
+    other: Self
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Concatenates the string view with another string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
+    other: Char
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Concatenates the string view with a character.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func +=(
+    other: Self
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Concatenates the string view with a string.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public operator func +=(
+    other: Char
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Concatenates the string view with a character.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Converts the string view to a string representation.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func debug() Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns a debug string representation of the string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func [](
+    index: isize
+) Char { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the character at the specified index.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func substr(
+    range: Range&lt;i32&gt;
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns a substring of the string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func rjust(
+    length: usize,
+    fill: Char = ...
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Right adjusts the string view to the specified length. with the specified character.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func ljust(
+    length: usize,
+    fill: Char = ...
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Left adjusts the string view to the specified length. with the specified character.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func split(
+    sep: Self
+) Vector&lt;Self&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It splits the string view into a vector of substrings.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func clone() Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It clones the string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func empty() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It returns if the string view is empty.</p><hr style="margin-bottom: 30px;"/><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor() void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from(
+    buffer: Self
+) StringView&lt;Char&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Constructs a string view from another string view.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from&lt;T&gt;(
+    buffer: T
+) StringView&lt;Char&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Constructs a string view from an object that implements the `ToString` interface.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func from(
+    buffer: *const u8,
+    size: usize
+) StringView&lt;Char&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Constructs a string view from a buffer and its size.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static unsafe func from_cstr(
+    buffer: *const u8
+) StringView&lt;Char&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Constructs a string view from a C null-terminated string.</p><hr style="margin-bottom: 30px;"/><br/><br/><br/></div>
+    </main>
+</body>
+</html>

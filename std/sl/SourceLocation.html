@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::sl::SourceLocation</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::sl <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/sl.html">&lt; Go Back</a> <a href="std/sl/SourceLocation/column.html">&gt; column</a> <a href="std/sl/SourceLocation/-constructor.html">&gt; constructor</a> <a href="std/sl/SourceLocation/current.html">&gt; current</a> <a href="std/sl/SourceLocation/file.html">&gt; file</a> <a href="std/sl/SourceLocation/function.html">&gt; function</a> <a href="std/sl/SourceLocation/line.html">&gt; line</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/sl.html">sl</a>::<a style="color:rgb(14 116 144);" href="std/sl/SourceLocation.html">SourceLocation</a>;</h1><hr/><div><pre><code class="language-snowball">public class SourceLocation {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>SourceLocation</quote></h1><p><br/>A class to represent a location in a source file.</p><p><br/> This class is used to represent a location in a source file. It is<br/> used as an utility class to pass around source locations.<br/> <br/> ```<br/> func foo(x: SourceLocation = SourceLocation::current()) {<br/>   // ...<br/> }<br/> foo(); // Passes the current source location. from the call site.<br/> ```<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func file() String { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func line() i32 { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func column() i32 { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func function() String { ... }</code></pre><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func current(
+    file: String = ...,
+    line: i32 = ...,
+    column: i32 = ...,
+    function: String = ...
+) SourceLocation { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Construct a new SourceLocation object from the current location.</p><hr style="margin-bottom: 30px;"/><br/><br/><br/></div>
+    </main>
+</body>
+</html>

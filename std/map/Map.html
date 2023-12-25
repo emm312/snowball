@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::map::Map</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::map <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/map.html">&lt; Go Back</a> <a href="std/map/Map/at.html">&gt; at</a> <a href="std/map/Map/-constructor.html">&gt; constructor</a> <a href="std/map/Map/erase.html">&gt; erase</a> <a href="std/map/Map/has.html">&gt; has</a> <a href="std/map/Map/set.html">&gt; set</a> <a href="std/map/Map/size.html">&gt; size</a> <a href="std/map/Map/to_string.html">&gt; to_string</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/map.html">map</a>::<a style="color:rgb(14 116 144);" href="std/map/Map.html">Map</a>;</h1><hr/><div><pre><code class="language-snowball">public class Map&lt;K, V&gt;
+    implements ToString, Iterable&lt;tuples::Pair&lt;K, V&gt;&gt; {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><p><br/> A generic Map data structure that associates keys with values.<br/> Implements the `ToString` trait and provides iteration over key-value pairs.<br/> This Map uses a Vector to store key-value pairs and supports basic operations such as insertion,<br/> retrieval, update, deletion, and checking for the existence of keys.<br/> <br/> ```sn<br/> import std::map;<br/> <br/> let mut map = new map::Map&lt;i32, String&gt;();<br/> map.set(1, "one");<br/> map.set(2, "two");<br/> map.at(1); // "one"<br/> map.at(2) = "three";<br/> map.at(2); // "three"<br/> ```<br/> <br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func at(
+    key: K
+) &mut V { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func set(
+    key: K,
+    value: V
+) void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func has(
+    key: K
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func erase(
+    key: K
+) void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string&lt;&gt;() String { ... }</code></pre><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor() void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+</body>
+</html>

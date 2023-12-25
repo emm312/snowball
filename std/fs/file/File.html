@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::fs::file::File</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::fs::file <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/fs/file.html">&lt; Go Back</a> <a href="std/fs/file/File/close.html">&gt; close</a> <a href="std/fs/file/File/-constructor.html">&gt; constructor</a> <a href="std/fs/file/File/open.html">&gt; open</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/fs.html">fs</a>::<a style="color:rgb(14 116 144);" href="std/fs/file.html">file</a>::<a style="color:rgb(14 116 144);" href="std/fs/file/File.html">File</a>;</h1><hr/><div><pre><code class="language-snowball">public class File
+    implements ToString, Debug {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>File</quote></h1><p><br/>A file.</p><p><br/> This class represents a file on the filesystem.<br/> A file can be opened for reading or writing. It can also be <br/> created or deleted. This class gives all those operations in a<br/> safe and easy to use interface. <br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func open(
+    mode: String
+) bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Open the file.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func close() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Close the file.</p><hr style="margin-bottom: 30px;"/><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    path: path::Path,
+    mode: String
+) void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+</body>
+</html>

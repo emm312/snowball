@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::panics::panic</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::panics <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/panics.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/panics.html">panics</a>::<a style="color:rgb(14 116 144);" href="std/panics/panic.html">panic</a>;</h1><hr/><div><pre><code class="language-snowball">public func panic(
+    message: String = ...,
+    _location: sl::SourceLocation = ...
+) void { ... }</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>panic</quote></h1><p><br/>Emits a panic message and exits the program.</p><p><br/> The `panic` function is used to emit an error message and terminate the program. It is often used to<br/> handle critical errors or unexpected situations in the program. The function prints an error message<br/> along with source code location information and exits the program.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Parameters</h1><h1>message</h1><p>The error message to emit.</p><br/><h1>_location</h1><p>The source code location information (default is the current location).</p><hr/><h1 style="color:rgb(14 116 144);">@remarks</h1><p>The function prints the error message, source file, line number, and column number where the panic occurred.
+ To enable backtrace information, it suggests running the program with the `SN_BACKTRACE=1` environment variable.</p><br/><br/></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::fs::path::Path</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::fs::path <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/fs/path.html">&lt; Go Back</a> <a href="std/fs/path/Path/clean_path.html">&gt; clean_path</a> <a href="std/fs/path/Path/-constructor.html">&gt; constructor</a> <a href="std/fs/path/Path/-constructor-2.html">&gt; constructor(2)</a> <a href="std/fs/path/Path/empty.html">&gt; empty</a> <a href="std/fs/path/Path/exists.html">&gt; exists</a> <a href="std/fs/path/Path/join.html">&gt; join</a> <a href="std/fs/path/Path/join-2.html">&gt; join(2)</a> <a href="std/fs/path/Path/next.html">&gt; next</a> <a href="std/fs/path/Path/-operator !=.html">&gt; operator !=</a> <a href="std/fs/path/Path/-operator +.html">&gt; operator +</a> <a href="std/fs/path/Path/-operator / .html">&gt; operator / </a> <a href="std/fs/path/Path/-operator / -2.html">&gt; operator / (2)</a> <a href="std/fs/path/Path/-operator ==.html">&gt; operator ==</a> <a href="std/fs/path/Path/remove.html">&gt; remove</a> <a href="std/fs/path/Path/reset.html">&gt; reset</a> <a href="std/fs/path/Path/size.html">&gt; size</a> <a href="std/fs/path/Path/to_string.html">&gt; to_string</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/fs.html">fs</a>::<a style="color:rgb(14 116 144);" href="std/fs/path.html">path</a>::<a style="color:rgb(14 116 144);" href="std/fs/path/Path.html">Path</a>;</h1><hr/><div><pre><code class="language-snowball">public class Path
+    implements ToString, Iterable&lt;String&gt; {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>Path</quote></h1><p><br/>A path to a file or directory.</p><p><br/> <br/> This is a wrapper around a string that provides some useful<br/> operations for manipulating paths.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+    other: String
+) Path { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Join two paths together.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join(
+    other: Path
+) Path { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Join two paths together.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func next() Iter&lt;String&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It return's the next element in the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func reset() void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Resets the iteration to the beginning of the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func empty() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns whether the path is empty.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func ==(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func !=(
+    other: Path
+) bool { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func / (
+    other: Path
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func / (
+    other: String
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
+    other: String
+) Path { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string() String { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the string representation of the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() i32 { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the size of the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func clean_path(
+    double_dots: bool = ...
+) Path { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It removes the dot segments from the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func remove() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Removes the file or directory at the path.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func exists() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns whether the file or directory exists.</p><hr style="margin-bottom: 30px;"/><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    path: Vector&lt;String&gt;
+) void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    path: String
+) void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+</body>
+</html>

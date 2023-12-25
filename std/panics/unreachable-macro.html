@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::panics::unreachable</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::panics <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/panics.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/panics.html">panics</a>::<a style="color:rgb(14 116 144);" href="std/panics/unreachable-macro.html">unreachable</a>;</h1><hr/><div><pre><code class="language-snowball">macro unreachable() {
+    ...
+}</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>unreachable</quote></h1><p><br/>It is used to mark unreachable code.</p><p><br/> <br/> The `unreachable` macro is used to mark code that is unreachable. It is often used to mark code that should<br/> never be reached. If the code is reached, the program will panic with the specified message.<br/> <br/> This is useful any time that the compiler can't determine that some code is unreachable. For example:<br/>  - Match arms with guard conditions.<br/>  - Loops that dynamically terminate.<br/>  - Iterators that dynamically terminate.<br/> </p><br/><br/></div>
+    </main>
+</body>
+</html>

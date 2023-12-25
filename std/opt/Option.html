@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::opt::Option</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::opt <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/opt.html">&lt; Go Back</a> <a href="std/opt/Option/assert_not_empty.html">&gt; assert_not_empty</a> <a href="std/opt/Option/-constructor.html">&gt; constructor</a> <a href="std/opt/Option/-constructor-2.html">&gt; constructor(2)</a> <a href="std/opt/Option/empty.html">&gt; empty</a> <a href="std/opt/Option/has_value.html">&gt; has_value</a> <a href="std/opt/Option/val.html">&gt; val</a> <a href="std/opt/Option/value_or.html">&gt; value_or</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/opt.html">opt</a>::<a style="color:rgb(14 116 144);" href="std/opt/Option.html">Option</a>;</h1><hr/><div><pre><code class="language-snowball">public class Option&lt;T&gt; {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><p><br/> A type that represents either a value or nothing at all.<br/> The `Option` type is a fundamental concept used in many places, encoding the common scenario where<br/> a value can exist or be absent. For example, it is employed in functions that return values that may<br/> or may not be present, such as the `find` method on containers like `Array` and `Hash`. It is also<br/> used in the return type of functions that might not guarantee a result, like `Array::pop` or `Hash::delete`.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func val() T { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the value stored in the `Option`.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func empty() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns whether the `Option` is empty.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func has_value() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Whether the `Option` is engaged.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func value_or(
+    default_value: T
+) T { ... }</code></pre><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor() void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    value: T
+) void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+</body>
+</html>

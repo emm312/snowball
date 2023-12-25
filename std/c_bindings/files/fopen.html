@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::c_bindings::files::fopen</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::c_bindings <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/c_bindings/files.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/c_bindings.html">c_bindings</a>::<a style="color:rgb(14 116 144);" href="std/c_bindings/files.html">files</a>::<a style="color:rgb(14 116 144);" href="std/c_bindings/files/fopen.html">fopen</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func fopen(
+    $extern-arg-0: *const c_char,
+    $extern-arg-1: *const c_char
+) *const c_obj { ... }</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>fopen</quote></h1><p><br/>It opens the file whose name is specified in the parameter filename and associates it with a stream that can be identified in future operations by the FILE pointer returned.</p><p><br/> Otherwise, a null pointer is returned.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Parameters</h1><h1>filename</h1><p>C string containing the name of the file to be opened.</p><br/><h1>mode</h1><p>C string containing a file access mode.</p><hr/><h1 style="color:rgb(14 116 144);">@return</h1><p>If the file is successfully opened, the function returns a pointer to a FILE object that can be used to identify the stream on future operations.</p><br/><br/></div>
+    </main>
+</body>
+</html>

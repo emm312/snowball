@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::std::Range</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::std <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/std.html">&lt; Go Back</a> <a href="std/std/Range/begin.html">&gt; begin</a> <a href="std/std/Range/-constructor.html">&gt; constructor</a> <a href="std/std/Range/-constructor-2.html">&gt; constructor(2)</a> <a href="std/std/Range/next.html">&gt; next</a> <a href="std/std/Range/-operator +.html">&gt; operator +</a> <a href="std/std/Range/-operator -.html">&gt; operator -</a> <a href="std/std/Range/reset.html">&gt; reset</a> <a href="std/std/Range/size.html">&gt; size</a> <a href="std/std/Range/stop.html">&gt; stop</a> <a href="std/std/Range/to_string.html">&gt; to_string</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std/Range.html">Range</a>;</h1><hr/><div><pre><code class="language-snowball">public class Range&lt;N = i32&gt;
+    implements Iterable&lt;N&gt;, ToString {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>Range</quote></h1><p><br/>A class representing a range of elements.</p><p><br/> The `Range` class provides a versatile mechanism for working with ranges of elements,<br/> such as numerical values. It facilitates common range manipulation operations, including<br/> iteration, element access, and range size calculation.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() N { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the size of the range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func begin() N { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the start of the range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func stop() N { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the end of the range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func next() Iter&lt;N&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the next element in the iteration.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func reset() void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Resets the iteration to the beginning of the range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func +(
+    value: Range&lt;N&gt;
+) Range&lt;N&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Adds a value to the range with another range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func -(
+    value: Range&lt;N&gt;
+) Range&lt;N&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Subtracts a value from the range with another range.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string&lt;&gt;() String { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns a string representation of the range.</p><hr style="margin-bottom: 30px;"/><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    start: N,
+    end: N
+) void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor(
+    end: N
+) void { ... }</code></pre><br/><br/><br/></div>
+    </main>
+</body>
+</html>

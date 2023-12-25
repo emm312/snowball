@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::c_bindings::calloc</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::c_bindings <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/c_bindings.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/c_bindings.html">c_bindings</a>::<a style="color:rgb(14 116 144);" href="std/c_bindings/calloc.html">calloc</a>;</h1><hr/><div><pre><code class="language-snowball">external public unsafe func calloc(
+    $extern-arg-0: c_int,
+    $extern-arg-1: c_int
+) c_obj { ... }</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>calloc</quote></h1><p><br/>Allocates memory for an array of num objects of size size and initializes all bytes in the allocated storage to zero.</p><p><br/> </p><hr/><h1 style="color:rgb(14 116 144);">Parameters</h1><h1>num(c_int)</h1><p>- number of objects to allocate</p><br/><h1>size(c_int)</h1><p>- size of each object</p><hr/><h1 style="color:rgb(14 116 144);">@note</h1><p>(3) calloc is thread-safe: it behaves as though only accessing the memory locations visible through its argument,
+ and not any static storage.</p><hr/><h1 style="color:rgb(14 116 144);">@return</h1><p>c_obj - a pointer to the memory block allocated by the function.
+ The type of this pointer is always void*, which can be cast to the desired type of data pointer
+ in order to be dereferenceable.</p><br/><br/></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::internal::integers::DEC_DIGITS_LUT</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::internal::integers <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/internal/integers.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/internal.html">internal</a>::<a style="color:rgb(14 116 144);" href="std/internal/integers.html">integers</a>::<a style="color:rgb(14 116 144);" href="std/internal/integers/DEC_DIGITS_LUT-var.html">DEC_DIGITS_LUT</a>;</h1><hr/><div><pre><code class="language-snowball">const DEC_DIGITS_LUT: *const u8 = ...</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>DEC_DIGITS_LUT</quote></h1><p><br/>Digits lookup table for decimal numbers.</p><p><br/> The `DEC_DIGITS_LUT` lookup table is used to convert decimal numbers to strings.<br/> It is used by the `to_string` method of the `IntegerImpl` class.<br/> <br/> The lookup table is a 400 byte array containing the digits of the decimal numbers<br/> from 0 to 99. Each digit is encoded as a 2 byte value. The first byte is the<br/> ASCII code of the first digit and the second byte is the ASCII code of the second<br/> digit.<br/> <br/> For example, the number 42 is encoded as the 2 bytes `0x3432`. The first byte<br/> `0x34` is the ASCII code of the digit `4` and the second byte `0x32` is the<br/> ASCII code of the digit `2`.<br/> <br/> </p><br/><br/></div>
+    </main>
+</body>
+</html>

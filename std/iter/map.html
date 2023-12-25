@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::iter::map</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::iter <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/iter.html">&lt; Go Back</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/iter.html">iter</a>::<a style="color:rgb(14 116 144);" href="std/iter/map.html">map</a>;</h1><hr/><div><pre><code class="language-snowball">public func map&lt;Y, X, I&gt;(
+    iterator: I&lt;X&gt;,
+    fn: Function&lt;func (X) -> Y&gt;
+) Vector&lt;Y&gt; { ... }</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>map</quote></h1><p><br/>It maps an iterator to a new iterator by applying a function to each element.</p><p><br/> <br/> ```<br/> const myVector = /*{1, 2, 3, 4, 5}*\/; /// For example purposes only.<br/> const mappedVector = map(myVector, (x) =&gt; x * 2);<br/> // mappedVector is now {2, 4, 6, 8, 10}<br/> ```<br/> <br/> </p><hr/><h1 style="color:rgb(14 116 144);">Parameters</h1><h1>iterator</h1><p>The iterator to map.</p><br/><h1>func</h1><p>The function to apply to each element.</p><hr/><h1 style="color:rgb(14 116 144);">@return</h1><p>A new iterator with the mapped elements.</p><hr/><h1 style="color:rgb(14 116 144);">@see</h1><p>filter</p><br/><br/></div>
+    </main>
+</body>
+</html>

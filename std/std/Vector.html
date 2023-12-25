@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>std::std::Vector</title>
+    <link rel="stylesheet" href="https://snowball-lang.github.io/autodoc-styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://snowball-lang.github.io/autodoc-styles/md2html.js"></script>
+
+    <script src="https://snowball-lang.github.io/autodoc-styles/highlight.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <base href="/snowball/">
+</head>
+<body>
+    <sidenav>
+        <h1 style="display: flex; align-items: center;">
+            std::std <span class="tag">version 1.0.0</span>
+        </h1>
+        <hr />
+        <a href="std/std.html">&lt; Go Back</a> <a href="std/std/Vector/at.html">&gt; at</a> <a href="std/std/Vector/-constructor.html">&gt; constructor</a> <a href="std/std/Vector/empty.html">&gt; empty</a> <a href="std/std/Vector/insert.html">&gt; insert</a> <a href="std/std/Vector/join.html">&gt; join</a> <a href="std/std/Vector/next.html">&gt; next</a> <a href="std/std/Vector/-operator [].html">&gt; operator []</a> <a href="std/std/Vector/pop.html">&gt; pop</a> <a href="std/std/Vector/push.html">&gt; push</a> <a href="std/std/Vector/remove.html">&gt; remove</a> <a href="std/std/Vector/reserve.html">&gt; reserve</a> <a href="std/std/Vector/reset.html">&gt; reset</a> <a href="std/std/Vector/resize.html">&gt; resize</a> <a href="std/std/Vector/size.html">&gt; size</a> <a href="std/std/Vector/to_string.html">&gt; to_string</a> <a href="std/std/Vector/with_capacity.html">&gt; with_capacity</a> 
+    </sidenav>
+    <main>
+        <h1><a style="color:rgb(14 116 144);" href="std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std.html">std</a>::<a style="color:rgb(14 116 144);" href="std/std/Vector.html">Vector</a>;</h1><hr/><div><pre><code class="language-snowball">public class Vector&lt;T, Allocator = ptr::Allocator&lt;T&gt;&gt;
+    implements Iterable&lt;T&gt;, ToString {
+  private:
+    // ... private fields
+};</code></pre></div><br><div class="doc"><h1 style="color:rgb(14 116 144);">Brief Description for <quote>Vector</quote></h1><p><br/>A class representing a vector of elements.</p><p><br/> The `Vector` class serves as a versatile container for managing vectors of elements.<br/> It offers a wide range of operations and functionalities, including element insertion,<br/> removal, and efficient element access. The class is designed for efficiency and memory<br/> safety, automatically handling memory allocation and deallocation required for storing<br/> and manipulating vectors.<br/> </p><hr/><h1 style="color:rgb(14 116 144);">Public Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func push(
+    value: T
+) void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It pushes an element to the back of the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func size() usize { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It returns the length of the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func resize() void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Resizes the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func reserve(
+    new_capacity: usize
+) void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Reserves a capacity for the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func at(
+    index: isize
+) &mut T { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the element at the specified index.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public operator func [](
+    index: isize
+) &mut T { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>A wrapper over the at() method. </p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func insert(
+    index: isize,
+    value: T
+) void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It inserts an element at the specified index.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func to_string&lt;&gt;() String { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It returns a string representation of the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func join&lt;&gt;(
+    sep: String
+) String { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It joins the vector into a string.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public func empty() bool { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It returns if the vector is empty.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func remove(
+    index: isize
+) void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It removes the element at the specified index.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public func pop() void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It removes the last element from the vector.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func next() Iter&lt;T&gt; { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Returns the next element in the iteration.</p><hr style="margin-bottom: 30px;"/><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public virtual func reset() void { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>Resets the iteration to the beginning of the range.</p><hr style="margin-bottom: 30px;"/><h1 style="color:rgb(14 116 144);">Public Static Functions</h1><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">mut public static operator func constructor() void { ... }</code></pre><pre><code style="background: transparent !important; padding: 5px 0 !important;" class="language-snowball">public static func with_capacity(
+    capacity: usize
+) Self { ... }</code></pre><p style="margin-left: 15px; margin-bottom: 20px; margin-top: 10px;"><br/>It creates a new Vector with the specified capacity.</p><hr style="margin-bottom: 30px;"/><br/><br/><br/></div>
+    </main>
+</body>
+</html>
